@@ -1,31 +1,33 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime — https://upptime.js.org/docs/configuration
+owner: unclecode
+repo: crawl4ai-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Scrape API
+    url: https://gate.crawl4ai.com/health/scrape
+  - name: Search API
+    url: https://gate.crawl4ai.com/health/search
+  - name: Extract API
+    url: https://gate.crawl4ai.com/health/extract
+  - name: MCP Server
+    url: https://gate.crawl4ai.com/health/mcp
+  - name: Website
+    url: https://gate.crawl4ai.com/
+  - name: Documentation
+    url: https://docs.crawl4ai.com/
+  - name: Crawler Arena
+    url: https://arena.crawl4ai.com/
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.crawl4ai.com
+  name: Crawl4AI Status
+  introTitle: "Crawl4AI Status"
+  introMessage: Live status of the Crawl4AI crawling API and services.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: crawl4ai.com
+      href: https://crawl4ai.com
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+assignees:
+  - unclecode
